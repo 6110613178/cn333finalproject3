@@ -1,0 +1,6 @@
+framework module Pods_Word_Dungeon {
+  umbrella header "Pods-Word Dungeon-umbrella.h"
+
+  export *
+  module * { export * }
+}
