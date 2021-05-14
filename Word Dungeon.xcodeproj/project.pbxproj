@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201828D826470ED0002B5AA1 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201828D726470ECF002B5AA1 /* GameRepository.swift */; };
 		201828DB26471275002B5AA1 /* PauseGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201828DA26471275002B5AA1 /* PauseGameView.swift */; };
 		2076DC7E264650E200299EC3 /* vocab.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2076DC7D264650E200299EC3 /* vocab.txt */; };
+		20B9B39A264EA2D2003FD345 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9B399264EA2D1003FD345 /* GameRepository.swift */; };
 		4E0E9E4D264C54B8000B9654 /* ReadVocabFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E9E4C264C54B8000B9654 /* ReadVocabFile.swift */; };
 		68B62F8C087186FA87C6B254 /* Pods_Word_Dungeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990A627FE78F462C6207018C /* Pods_Word_Dungeon.framework */; };
 		F929A26126446FF800398585 /* StatusGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929A26026446FF800398585 /* StatusGameView.swift */; };
@@ -29,9 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		201828D726470ECF002B5AA1 /* GameRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameRepository.swift; path = ../../../Downloads/GameRepository.swift; sourceTree = "<group>"; };
 		201828DA26471275002B5AA1 /* PauseGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseGameView.swift; sourceTree = "<group>"; };
 		2076DC7D264650E200299EC3 /* vocab.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocab.txt; sourceTree = "<group>"; };
+		20B9B399264EA2D1003FD345 /* GameRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameRepository.swift; path = ../../../../Downloads/GameRepository.swift; sourceTree = "<group>"; };
 		4E0E9E4C264C54B8000B9654 /* ReadVocabFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadVocabFile.swift; sourceTree = "<group>"; };
 		91DA267142ED09740772671E /* Pods-Word Dungeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Dungeon.release.xcconfig"; path = "Target Support Files/Pods-Word Dungeon/Pods-Word Dungeon.release.xcconfig"; sourceTree = "<group>"; };
 		990A627FE78F462C6207018C /* Pods_Word_Dungeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Word_Dungeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +109,7 @@
 				F9B9BC7526443E1400270D2B /* Alphabet.swift */,
 				F929A2692644858F00398585 /* ModelStage.swift */,
 				F96929B4263D4AC2006A9D0F /* SceneDelegate.swift */,
-				201828D726470ECF002B5AA1 /* GameRepository.swift */,
+				20B9B399264EA2D1003FD345 /* GameRepository.swift */,
 				F96929B6263D4AC2006A9D0F /* ContentView.swift */,
 				2076DC7D264650E200299EC3 /* vocab.txt */,
 				4E0E9E4C264C54B8000B9654 /* ReadVocabFile.swift */,
@@ -256,9 +256,9 @@
 				F96ACD362644123100981F5F /* GameData.swift in Sources */,
 				F96ACD3F2644136200981F5F /* HomeScreenView.swift in Sources */,
 				201828DB26471275002B5AA1 /* PauseGameView.swift in Sources */,
+				20B9B39A264EA2D2003FD345 /* GameRepository.swift in Sources */,
 				4E0E9E4D264C54B8000B9654 /* ReadVocabFile.swift in Sources */,
 				F929A26126446FF800398585 /* StatusGameView.swift in Sources */,
-				201828D826470ED0002B5AA1 /* GameRepository.swift in Sources */,
 				F96ACD3C2644127F00981F5F /* MainGameView.swift in Sources */,
 				F96929B5263D4AC2006A9D0F /* SceneDelegate.swift in Sources */,
 				F9B9BC7626443E1400270D2B /* Alphabet.swift in Sources */,
