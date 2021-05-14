@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+
 struct MainGameView: View {
     @ObservedObject var gameData = GameData()
     @State var stage = 0
@@ -33,7 +34,7 @@ struct MainGameView: View {
                             gameData.setContinue(stage: gameRepository.getStage(), HP: gameRepository.getHp(), ATK: gameRepository.getAtk(), DEF: gameRepository.getDef(), CRIT: gameRepository.getCri(), EVA: gameRepository.getEva())
                             loadSave.toggle()
                         }){
-                            Image("CONFIRM_HALF")
+                            Image("")
                                 .resizable()
                                 .frame(width: 120, height: 60)
                         }
@@ -45,7 +46,7 @@ struct MainGameView: View {
                             .position(x: geometry.size.width-200, y: 75)
                     }
                     NavigationLink(
-                        destination: PauseGameView(showingGame: $showingGame)
+                        destination: PauseGameView(showingGame: $showingGame, gameData: gameData)
                     ){
                         Image("MENU")
                             .resizable()
@@ -174,6 +175,20 @@ struct MainGameView: View {
                         }){
                             /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
                         }
+                        if loadSave {
+                            Button(action: {
+                                gameData.setContinue(stage: gameRepository.getStage(), HP: gameRepository.getHp(), ATK: gameRepository.getAtk(), DEF: gameRepository.getDef(), CRIT: gameRepository.getCri(), EVA: gameRepository.getEva())
+                                loadSave.toggle()
+                            }){
+                                Image("CONFIRM_HALF")
+                                    .resizable()
+                                    .frame(width: 120, height: 60)
+                            }
+                        } else {
+                            Image("")
+                                .resizable()
+                                .frame(width: 120, height: 60)
+                        }
                         if gameData.modelStage.getMonsterModel().isAlive{
                             Image("")
                                 .resizable()
@@ -213,7 +228,7 @@ struct MainGameView: View {
                                         .frame(width: 120, height: 60)
                                 }
                                 NavigationLink(
-                                    destination: StatusGameView()
+                                    destination: StatusGameView(gameData: gameData)
                                 ){
                                     Image("STATUS_UPGRADE_GO")
                                         .resizable()

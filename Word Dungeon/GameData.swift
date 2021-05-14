@@ -8,7 +8,7 @@
 import Foundation
 
 class GameData: ObservableObject {
-    var stage: Int = 0
+    @Published var stage: Int = 0
     @Published var vocabularyStage = VocabularyStage(stage: 0)
     private var showVocabCard: [String] = []
     @Published var alphabet = Alphabet(stage: 0)
@@ -24,6 +24,7 @@ class GameData: ObservableObject {
         vocabularyStage = VocabularyStage(stage: stage)
         alphabet = Alphabet(stage: stage)
         modelStage.stage = stage
+        modelStage = ModelStage(stage: stage)
         modelStage.addStagePlayer(iHP: HP, iATK: ATK, iDEF: DEF, iCRIT: CRIT, iEVA: EVA)
     }
     

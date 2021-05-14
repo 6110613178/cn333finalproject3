@@ -26,6 +26,7 @@ struct PauseGameView: View {
                     .frame(width: 200, height: 60)
             }
             Button(action:{
+                gameRepository.remove(at: 0)
                 gameRepository.newsaveplayer(stage: gameData.stage, hp: gameData.modelStage.getHpPlayer(), atk: gameData.modelStage.getAtkPlayer(), def: gameData.modelStage.getDefPlayer(), cri: gameData.modelStage.getCritPlayer(), eva: gameData.modelStage.getEvaPlayer())
                 showingGame = ""
             }){

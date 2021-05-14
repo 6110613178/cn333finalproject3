@@ -13,7 +13,6 @@
 		4E0E9E4D264C54B8000B9654 /* ReadVocabFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E9E4C264C54B8000B9654 /* ReadVocabFile.swift */; };
 		68B62F8C087186FA87C6B254 /* Pods_Word_Dungeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990A627FE78F462C6207018C /* Pods_Word_Dungeon.framework */; };
 		F929A26126446FF800398585 /* StatusGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929A26026446FF800398585 /* StatusGameView.swift */; };
-		F929A26726447D8300398585 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929A26626447D8300398585 /* GameOverView.swift */; };
 		F929A26A2644858F00398585 /* ModelStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929A2692644858F00398585 /* ModelStage.swift */; };
 		F96929B3263D4AC2006A9D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96929B2263D4AC2006A9D0F /* AppDelegate.swift */; };
 		F96929B5263D4AC2006A9D0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96929B4263D4AC2006A9D0F /* SceneDelegate.swift */; };
@@ -38,7 +37,6 @@
 		990A627FE78F462C6207018C /* Pods_Word_Dungeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Word_Dungeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A7D8178B0CA9D55B2E8873 /* Pods-Word Dungeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Dungeon.debug.xcconfig"; path = "Target Support Files/Pods-Word Dungeon/Pods-Word Dungeon.debug.xcconfig"; sourceTree = "<group>"; };
 		F929A26026446FF800398585 /* StatusGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusGameView.swift; sourceTree = "<group>"; };
-		F929A26626447D8300398585 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		F929A2692644858F00398585 /* ModelStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelStage.swift; sourceTree = "<group>"; };
 		F96929AF263D4AC2006A9D0F /* Word Dungeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Dungeon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96929B2263D4AC2006A9D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				201828D726470ECF002B5AA1 /* GameRepository.swift */,
 				F96929B6263D4AC2006A9D0F /* ContentView.swift */,
 				2076DC7D264650E200299EC3 /* vocab.txt */,
-				F929A26626447D8300398585 /* GameOverView.swift */,
 				4E0E9E4C264C54B8000B9654 /* ReadVocabFile.swift */,
 				F929A26026446FF800398585 /* StatusGameView.swift */,
 				201828DA26471275002B5AA1 /* PauseGameView.swift */,
@@ -255,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F929A26A2644858F00398585 /* ModelStage.swift in Sources */,
-				F929A26726447D8300398585 /* GameOverView.swift in Sources */,
 				F96929B3263D4AC2006A9D0F /* AppDelegate.swift in Sources */,
 				F96ACD362644123100981F5F /* GameData.swift in Sources */,
 				F96ACD3F2644136200981F5F /* HomeScreenView.swift in Sources */,

@@ -41,11 +41,13 @@ struct ModelStage {
         MonsterModel(imageURL: "M22_ShadowGank_Shadow", HP: 230, ATK: 40, DEF: 5, CRIT: 35, EVA: 15, isAlive: true),
         MonsterModel(imageURL: "M23_HandsomeSmile_Shadow", HP: 270, ATK: 40, DEF: 5, CRIT: 50, EVA: 20, isAlive: true),
         MonsterModel(imageURL: "M24_SwampFace_Shadow", HP: 300, ATK: 70, DEF: 20, CRIT: 10, EVA: 5, isAlive: true),
-        MonsterModel(imageURL: "M25_DarkGothic_Shadow", HP: 330, ATK: 200, DEF: 10, CRIT: 60, EVA: 20, isAlive: true),
+        MonsterModel(imageURL: "M25_DarkGothic_Shadow", HP: 330, ATK: 150, DEF: 10, CRIT: 50, EVA: 20, isAlive: true),
         MonsterModel(imageURL: "M26_DemonFishWarrior_Shadow", HP: 300, ATK: 80, DEF: 30, CRIT: 20, EVA: 5, isAlive: true),
         MonsterModel(imageURL: "M27_DemonCrab_Shadow", HP: 330, ATK: 100, DEF: 15, CRIT: 10, EVA: 20, isAlive: true),
-        MonsterModel(imageURL: "M28_DemonSpider_Shadow", HP: 360, ATK: 140, DEF: 25, CRIT: 10, EVA: 15, isAlive: true),
-        MonsterModel(imageURL: "M29_OldDemon_Shadow", HP: 400, ATK: 180, DEF: 15, CRIT: 10, EVA: 20, isAlive: true),
+        MonsterModel(imageURL: "M28_DemonSpider_Shadow", HP: 360, ATK: 120, DEF: 25, CRIT: 5, EVA: 15, isAlive: true),
+        MonsterModel(imageURL: "M29_OldDemon_Shadow", HP: 400, ATK: 150, DEF: 35, CRIT: 5, EVA: 5, isAlive: true),
+        MonsterModel(imageURL: "M30_DoubleHeadDemonDragon_Shadow", HP: 600, ATK: 200, DEF: 50, CRIT: 15, EVA: 10, isAlive: true),
+        MonsterModel(imageURL: "M31_ThreeEyesGod_Shadow", HP: 1000, ATK: 500, DEF: 75, CRIT: 1, EVA: 1, isAlive: true),
         
     ]
     var stage: Int
@@ -114,6 +116,7 @@ struct ModelStage {
             FullEVA = playerModelList[(stage+1)/5].EVA
             EVAPoint = 0
         }
+        playerStage = playerModelList[(stage+1)/5]
     }
     
     mutating func changePlayer(stage: Int) {
@@ -216,7 +219,7 @@ struct ModelStage {
         return playerStage.CRIT
     }
     func getFullHPPlayer() -> Int {
-        return playerModelList[stage/5].HP
+        return playerModelList[(stage+1)/5].HP
     }
     
     func getHpMonster() -> Int {
